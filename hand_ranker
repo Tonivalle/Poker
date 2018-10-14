@@ -1,0 +1,14 @@
+class PokerHand(object):
+
+    RESULT = ["Loss", "Tie", "Win"]
+
+    def __init__(self, hand): #hand in format "2S AH 2H AS AC"
+        self.hand = hand
+        self.cards = hand[1]+hand[4]+hand[7]+hand[10]+hand[13] 
+        self.suit = hand[2]+hand[5]+hand[8]+hand[11]+hand[14]
+    
+    def jugada(self):
+        if self.cards in "23456789JQKA": #straight 
+    
+    def compare_with(self, other):
+        
